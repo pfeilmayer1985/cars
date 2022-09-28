@@ -12,7 +12,7 @@ namespace VehiclesAgain
         {
             Make = make;
             Model = model;
-            Type = "LKW";
+            Type = "Truck";
             NoWheels = noWheels;
         }
     }

@@ -30,9 +30,9 @@ namespace VehiclesAgain
         {
             Console.Write("Your motorcycle make: ");
             string Make = Console.ReadLine();
-            Console.Write("Your motorcycle number: ");
+            Console.Write("Your motorcycle model: ");
             string Model = Console.ReadLine();
-            Console.Write("Your motorcycle has no of wheels: ");
+            Console.Write("How many wheels does it have: ");
             int NoWeheels = Convert.ToInt32(Console.ReadLine());
             Motorcycle oneMotorcycle = new Motorcycle(Make, Model, NoWeheels);
             VehicleClasses.Add(oneMotorcycle);
@@ -41,11 +41,11 @@ namespace VehiclesAgain
 
         public void AddPKW()
         {
-            Console.Write("Your PKW make: ");
+            Console.Write("Your car make: ");
             string Make = Console.ReadLine();
-            Console.Write("Your PKW number: ");
+            Console.Write("Your car model: ");
             string Model = Console.ReadLine();
-            Console.Write("Your PKW has no of wheels: ");
+            Console.Write("How many wheels does it have: ");
             int NoWeheels = Convert.ToInt32(Console.ReadLine());
             PKW onePKW = new PKW(Make, Model, NoWeheels);
             VehicleClasses.Add(onePKW);
@@ -54,11 +54,11 @@ namespace VehiclesAgain
 
         public void AddLKW()
         {
-            Console.Write("Your LKW make: ");
+            Console.Write("Your truck make: ");
             string Make = Console.ReadLine();
-            Console.Write("Your LKW number: ");
+            Console.Write("Your truck model: ");
             string Model = Console.ReadLine();
-            Console.Write("Your LKW has no of wheels: ");
+            Console.Write("How many wheels does it have: ");
             int NoWeheels = Convert.ToInt32(Console.ReadLine());
             LKW oneLKW = new LKW(Make, Model, NoWeheels);
             VehicleClasses.Add(oneLKW);
@@ -70,6 +70,7 @@ namespace VehiclesAgain
             foreach (VehicleClass vehicle in VehicleClasses)
             {
                 Console.WriteLine($"You have a {vehicle.Type}, make {vehicle.Make} and model {vehicle.Model} with {vehicle.NoWheels} wheels in your list.");
+
             }
         }
     }
